@@ -3,7 +3,7 @@
 import React, { useState, useRef } from "react";
 import Image from 'next/image';
 
-const VoiceRecorder: React.FC = () => {
+const VoiceRecorder2: React.FC = () => {
   const [estaGrabando, setEstaGrabando] = useState<boolean>(false);
   const [urlAudio, setUrlAudio] = useState<string | null>(null);
   const [nombreArchivo, setNombreArchivo] = useState<string>("Operador: ");
@@ -183,15 +183,40 @@ const VoiceRecorder: React.FC = () => {
           />
 
           <i className="fas fa-microphone-alt text-6xl mb-2" style={{ color: "darkblue" }}></i>
-          <h2 className="text-3xl mb-2" style={{ color: "darkblue" }}>Esterilización</h2>
+          <h2 className="text-3xl mb-2" style={{ color: "darkblue" }}>Inoculación</h2>
 
           <ul className="text-xl mt-4 text-darkblue" style={{ color: "darkblue" }}>
-           
+         
+            
             <li className="flex items-start">
-              <span className="w-6 flex-shrink-0">🛑</span>
-              <span><strong>Esterilización:</strong> número de bolsas</span>
+              <span className="w-6 flex-shrink-0">🦠</span>
+              <span><strong>Inoculación:</strong> número de bolsas</span>
+            </li>
+            <li className="flex items-start">
+              <span className="w-6 flex-shrink-0">🦠</span>
+              <span><strong>Tipo de Inoculación:</strong> Duplicación / Producción</span>
             </li>
             
+          </ul>
+
+          <ul className="text-xl mt-4 text-darkblue" style={{ color: "darkblue" }}>
+            
+            <li className="flex items-start">
+              <span className="w-6 flex-shrink-0">🧬</span>
+              <span className="ml-2"><strong>Tipo de Cepa:</strong> Madre / Cepita</span>
+            </li>
+            <li className="flex items-start">
+              <span className="w-6 flex-shrink-0">🧬</span>
+              <span className="ml-2"><strong>Primera cepa utilizada:</strong> EJ: 231024TR</span>
+            </li>
+            <li className="flex items-start">
+              <span className="w-6 flex-shrink-0">🧬</span>
+              <span className="ml-2"><strong>Cantidad:</strong> EJ: 5 bolsas</span>
+            </li>
+            <li className="flex items-start">
+              <span className="w-6 flex-shrink-0">🧬</span>
+              <span className="ml-2">Repetir Proceso hasta 4 veces si es necesario</span>
+            </li>
           </ul>
 
           <button
@@ -246,4 +271,4 @@ const VoiceRecorder: React.FC = () => {
   );
 };
 
-export default VoiceRecorder;
+export default VoiceRecorder2;

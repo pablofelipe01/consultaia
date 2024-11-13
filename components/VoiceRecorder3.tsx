@@ -3,7 +3,7 @@
 import React, { useState, useRef } from "react";
 import Image from 'next/image';
 
-const VoiceRecorder: React.FC = () => {
+const VoiceRecorder3: React.FC = () => {
   const [estaGrabando, setEstaGrabando] = useState<boolean>(false);
   const [urlAudio, setUrlAudio] = useState<string | null>(null);
   const [nombreArchivo, setNombreArchivo] = useState<string>("Operador: ");
@@ -183,16 +183,30 @@ const VoiceRecorder: React.FC = () => {
           />
 
           <i className="fas fa-microphone-alt text-6xl mb-2" style={{ color: "darkblue" }}></i>
-          <h2 className="text-3xl mb-2" style={{ color: "darkblue" }}>Esterilización</h2>
+          <h2 className="text-3xl mb-2" style={{ color: "darkblue" }}>Cuarto</h2>
 
           <ul className="text-xl mt-4 text-darkblue" style={{ color: "darkblue" }}>
-           
-            <li className="flex items-start">
-              <span className="w-6 flex-shrink-0">🛑</span>
-              <span><strong>Esterilización:</strong> número de bolsas</span>
-            </li>
             
+            
+            <li className="flex items-start">
+              <span className="w-6 flex-shrink-0">🏠</span>
+              <span><strong>Cuarto:</strong> cuarto al que irán las bolsas</span>
+            </li>
+            <li className="flex items-start">
+              <span className="w-6 flex-shrink-0">🌡️</span>
+              <span><strong>Temperatura:</strong> temperatura del cuarto</span>
+            </li>
+            <li className="flex items-start">
+              <span className="w-6 flex-shrink-0">💧</span>
+              <span><strong>Humedad:</strong> % de Humedad</span>
+            </li>
+            <li className="flex items-start">
+              <span className="w-6 flex-shrink-0">📦 </span>
+              <span><strong>Estibas:</strong> de qué estibas a qué estibas se guardaron las bolsas</span>
+            </li>
           </ul>
+
+        
 
           <button
             onClick={iniciarGrabacion}
@@ -246,4 +260,4 @@ const VoiceRecorder: React.FC = () => {
   );
 };
 
-export default VoiceRecorder;
+export default VoiceRecorder3;
