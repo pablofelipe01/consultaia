@@ -3,6 +3,7 @@ import VoiceRecorder from "../../components/VoiceRecorder";
 import VoiceRecorder2 from "../../components/VoiceRecorder2";
 import VoiceRecorder3 from "../../components/VoiceRecorder3";
 import VoiceRecorder4 from "../../components/VoiceRecorder4";
+import BitacoraTemporal from "../../components/BitacoraTemporal";
 
 export default function Home() {
   return (
@@ -69,6 +70,17 @@ export default function Home() {
           padding: "1rem"
         }}>
           <VoiceRecorder4 />
+        </div>
+
+        <div style={{ 
+          minHeight: "800px",
+          height: "100%",
+          backgroundColor: "rgba(255, 255, 255, 0.358)",
+          borderRadius: "1rem",
+          overflow: "auto",
+          padding: "1rem"
+        }}>
+          <BitacoraTemporal />
         </div>
       </div>
     </main>
