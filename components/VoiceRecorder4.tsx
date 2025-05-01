@@ -119,7 +119,7 @@ const VoiceRecorder4: React.FC = () => {
     formData.append('file', audioBlob, `${nombreArchivo}.webm`);
 
     try {
-      const response = await fetch('https://tok-n8n-sol.onrender.com/webhook/e673d42a-af37-48df-aec2-3b1f0b0c84d3', {
+      const response = await fetch('https://n8n-sirius-agentic.onrender.com/webhook/e673d42a-af37-48df-aec2-3b1f0b0c84d3', {
         method: 'POST',
         body: formData,
       });
